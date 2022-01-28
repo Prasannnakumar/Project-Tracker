@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sky"
+    tools:context="com.example.ranjan.projecttracker.imageshow">
+
+
+    <Button
+        android:id="@+id/button_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="show"
+        android:onClick="button_show_click"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/imageViewshow"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_toRightOf="@+id/button_image"
+        />
+
+    <EditText
+        android:id="@+id/editText_issue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageViewshow"
+        android:ems="10"
+        android:hint="Issue"
+        android:inputType="text"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editText_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText_issue"
+        android:layout_alignStart="@+id/editText_issue"
+        android:layout_below="@+id/editText_issue"
+        android:ems="10"
+        android:hint="Date"
+        android:textStyle="bold"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/editText_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText_date"
+        android:layout_alignStart="@+id/editText_date"
+        android:layout_below="@+id/editText_date"
+        android:ems="10"
+        android:textStyle="bold"
+        android:hint="Time"
+        android:inputType="time" />
+
+    <EditText
+        android:id="@+id/editText_place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText_time"
+        android:layout_alignStart="@+id/editText_time"
+        android:layout_below="@+id/editText_time"
+        android:ems="10"
+        android:hint="Place"
+        android:inputType="text"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editText_remark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText_place"
+        android:layout_alignStart="@+id/editText_place"
+        android:layout_below="@+id/editText_place"
+        android:ems="10"
+        android:hint="Remark"
+        android:inputType="text"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/editText_remark"
+        android:text="save"
+        android:textStyle="bold"
+        android:onClick="button_save_click"
+        android:layout_below="@+id/editText_place"
+        />
+</RelativeLayout>

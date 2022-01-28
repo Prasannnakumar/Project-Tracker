@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sky"
+    tools:context="com.example.ranjan.projecttracker.userchngpwd">
+    <Button
+        android:text="submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/confirm_password"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="53dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginTop="69dp"
+        android:id="@+id/button"
+        android:onClick="button_confirm"/>
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/old_password"
+        android:hint="Old passsword"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:hint="New password"
+        android:id="@+id/new_password"
+        android:layout_below="@+id/old_password"
+        android:layout_alignLeft="@+id/old_password"
+        android:layout_alignStart="@+id/old_password"
+        android:layout_marginTop="29dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:hint="confirm password"
+        android:id="@+id/confirm_password"
+        android:layout_below="@+id/new_password"
+        android:layout_alignLeft="@+id/new_password"
+        android:layout_alignStart="@+id/new_password"
+        android:layout_marginTop="36dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:text="change password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:id="@+id/textView3"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="30dp"/>
+</RelativeLayout>
+
+
